@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        [class*=col]{
+            padding: 1rem;
+            background-color: blue;
+      
+            border:2px solid black;
+            color:#fff;
+        }
+        .child{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="text-center">hello bootstrap world</h1>
+    <h2 class="text-center my-5">Break points</h2>
+    <div class="container border ">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">col 1</div>
+            <div class="col-lg-6 col-md-6">col 2</div>
+            <div class="container border">
+                <div class="row align-items-center" style="height:500px";>
+                  <div class="col">
+                    One of three columns
+                  </div>
+                  <div class="col">
+                    One of three columns
+                  </div>
+                  <div class="col">
+                    One of three columns
+                  </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        
+                        <div class="col-2">1</div>
+                        <div class="col-2">2</div>
+                    </div>
+                </div>
+                <h2 class="text-center my-5">gutter</h2>
+                <div class="container my-5">
+                    <div class="row gx-5 gy-3">
+                        <div class="col-6"><div class="child">col 1</div></div>
+                        <div class="col-6"><div class="child">col 1</div></div>
+                        <div class="col-6"><div class="child">col 1</div></div>
+                        <div class="col-6"><div class="child">col 1</div></div>
+
+                    </div>
+
+                </div>
+                <h2 class="text-center my-2">Buttons</h2>
+                <div class="container">
+                    <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+                </div>
+                <div class="container my-5">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+                <h2 class="text-center my-2">Cards</h2>
+                <h2 class="text-center my-2">adjusting size through w-75 like that inside card class</h2>
+                <div class="container my-5">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+
+                </div>
+                <h2 class="text-center my-2">adjusting size through w-50 inside the card class</h2>
+                <div class="container my-5">
+                    
+                        <div class="col-6">
+                            <div class="card w-50">
+                                <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                        </div>
+                 
+
+                 
+                </div>
+                <h2 class="text-center">creating cards using columns </h2>
+                <div class="container my-5">
+                    <div class="row my-5">
+                        <div class="col-3">
+                            <div class="card w-100">
+                                <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="cardheader">card header</div>
+                                <div class="card-body">hi this is card</div>
+                                <div class="card-footer">2 days</div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="https://picsum.photos/300/200" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Primary card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Primary card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Primary card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Header</div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Primary card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                       
+                        
+                    </div>
+                </div>
+           
+            
+        </div>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
